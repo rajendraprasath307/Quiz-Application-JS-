@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Application</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h2 id="question">Question will appear here</h2>
+    <div class="options-container" id="options-container">
+      <!-- Options will be dynamically inserted here -->
+    </div>
+    <div id="timer">Time left: <span id="time">30</span>s</div>
+    <button id="next-btn" onclick="nextQuestion()">Next</button>
+    <p id="feedback"></p>
+    <div id="result" style="display: none;">
+      <h3>Quiz Results</h3>
+      <p>Correct Answers: <span id="correct-answers">0</span></p>
+      <p>Wrong Answers: <span id="wrong-answers">0</span></p>
+      <p>Total Time: <span id="total-time">0</span>s</p>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
